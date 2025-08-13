@@ -4864,6 +4864,19 @@ final: prev: {
     meta.hydraPlatforms = [ ];
   };
 
+  fff-nvim = buildVimPlugin {
+    pname = "fff.nvim";
+    version = "2025-08-12";
+    src = fetchFromGitHub {
+      owner = "dmtrKovalenko";
+      repo = "fff.nvim";
+      rev = "b0edf2a0d1c165cdfafe0636037390ccef28ac01";
+      sha256 = "1xbv7aifqg2vms7yw0p9n0bjx04xfbybdgwh79hmbqhj7ad9b5n2";
+    };
+    meta.homepage = "https://github.com/dmtrKovalenko/fff.nvim/";
+    meta.hydraPlatforms = [ ];
+  };
+
   file-line = buildVimPlugin {
     pname = "file-line";
     version = "2016-10-21";
